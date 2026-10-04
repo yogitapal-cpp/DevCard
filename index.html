@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevCard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+            <h1>DevCard</h1>
+            <p>Create your developer profile card</p>
+        </header>
+
+        <main>
+
+            <!-- Form Section -->
+            <section class="form-section">
+
+                <h2>Edit Profile</h2>
+
+                <label>Name</label>
+                <input type="text" id="nameInput" placeholder="Enter your name">
+
+                <label>Role</label>
+                <input type="text" id="roleInput" placeholder="e.g. CSE Student">
+
+                <label>About</label>
+                <textarea id="aboutInput" placeholder="Tell something about yourself"></textarea>
+
+                <label>Skills</label>
+                <input type="text" id="skillsInput" placeholder="HTML, CSS, JavaScript">
+
+                <label>GitHub</label>
+                <input type="text" id="githubInput" placeholder="GitHub username">
+
+                <label>LinkedIn</label>
+                <input type="text" id="linkedinInput" placeholder="LinkedIn profile">
+
+            </section>
+
+
+            <!-- Preview Section -->
+            <section class="preview-section">
+
+                <h2>Live Preview</h2>
+                <div class="theme-buttons">
+    <button id="darkTheme">Dark</button>
+    <button id="gradientTheme">Gradient</button>
+    <button id="minimalTheme">Minimal</button>
+</div>
+
+                <div class="dev-card">
+
+                    <div class="profile-icon">
+                        👩‍💻
+                    </div>
+
+                    <h2 id="namePreview">Your Name</h2>
+
+                    <p id="rolePreview">Your Role</p>
+
+                    <p id="aboutPreview">
+                        Your introduction will appear here.
+                    </p>
+
+                    <div id="skillsPreview" class="skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="links">
+
+                        <a href="#" id="githubPreview">
+                            GitHub
+                        </a>
+
+                        <a href="#" id="linkedinPreview">
+                            LinkedIn
+                        </a>
+
+                    </div>
+                    <button id="saveBtn">💾 Save Profile</button>
+                    <button id="downloadBtn">⬇ Download Card</button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+    
+
+</body>
+
+</html>

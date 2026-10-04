@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+}
+
+.app {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #94a3b8;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-section,
+.preview-section {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background: #0f172a;
+    color: white;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #818cf8;
+}
+
+.preview-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dev-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #312e81, #1e1b4b);
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.profile-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.dev-card h2 {
+    margin-bottom: 8px;
+}
+
+#rolePreview {
+    color: #a5b4fc;
+    margin-bottom: 20px;
+}
+
+#aboutPreview {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.skills span {
+    background: #0f172a;
+    color: #c7d2fe;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    background: #4f46e5;
+    padding: 9px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #6366f1;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 800px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+}
+#downloadBtn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#downloadBtn:hover {
+    background: #818cf8;
+    transform: translateY(-2px);
+}
+#saveBtn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #10b981;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#saveBtn:hover {
+    background: #34d399;
+    transform: translateY(-2px);
+}
+.theme-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.theme-buttons button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #334155;
+    color: white;
+}
+
+.theme-buttons button:hover {
+    background: #475569;
+}
+
+/* Gradient Theme */
+
+.dev-card.gradient-theme {
+    background: linear-gradient(135deg, #7c3aed, #db2777);
+}
+
+/* Minimal Theme */
+
+.dev-card.minimal-theme {
+    background: white;
+    color: #111827;
+}
+
+.dev-card.minimal-theme #rolePreview {
+    color: #4f46e5;
+}
+
+.dev-card.minimal-theme #aboutPreview {
+    color: #4b5563;
+}
+
+.dev-card.minimal-theme .skills span {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.dev-card.minimal-theme .links a {
+    color: white;
+}
